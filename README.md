@@ -1,165 +1,105 @@
-# AWS GuardDuty Automation with Terraform
+# 🚀 Charles Bucher – AWS Cloud Support | NOC | CloudOps Engineer
 
-![Portfolio Badge](https://img.shields.io/badge/Portfolio-Ready-brightgreen)
-
-Automated Security Threat Detection | Infrastructure-as-Code | CI/CD Pipeline
-
-This project demonstrates CloudOps security automation skills by deploying AWS GuardDuty using Terraform. It includes a complete CI/CD pipeline and visual documentation for portfolio purposes.
+Hands-on Cloud Support Engineer & NOC Specialist turning AWS environments into fully monitored, automated, and resilient systems. Self-taught, results-driven, and practical, with expertise in AWS support, CloudOps automation, incident response, observability, and security orchestration.
 
 ---
 
-## 🎯 What This Project Does
+## 🛡 Tech Stack & Badges
 
-- Automates AWS GuardDuty deployment across AWS accounts using Terraform  
-- Enables real-time security findings notifications  
-- Provides repeatable, auditable Infrastructure-as-Code deployment  
-- Uses GitHub Actions for CI/CD automation  
-- Includes step-by-step visual walkthroughs with screenshots and GIFs  
-
----
-
-## 🔑 Key Features
-
-### Infrastructure as Code
-- Terraform automates the entire GuardDuty setup  
-- Version-controlled configuration files (`main.tf`, `variables.tf`, `outputs.tf`)  
-- Repeatable deployments across multiple AWS accounts  
-- Auditable infrastructure changes  
-
-### Security Monitoring
-- GuardDuty enabled for threat detection (compromised credentials, crypto mining, unauthorized access)  
-- Real-time detection of security threats  
-- Extensible for SNS notifications, Lambda integrations, or custom monitoring rules  
-
-### CI/CD Pipeline
-- GitHub Actions workflow for automated Terraform deployment  
-- Runs `terraform plan` and `terraform apply` on code changes  
-- Safe deployment practices with plan review  
-
-### Visual Documentation
-- Screenshots showing each step of the workflow  
-- GIFs demonstrate real-time progress for recruiters and hiring managers  
+![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=FF9900)
+![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)
+![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
+![CloudWatch](https://img.shields.io/badge/CloudWatch-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![GuardDuty](https://img.shields.io/badge/GuardDuty-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![RDS](https://img.shields.io/badge/RDS-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white)
+![CI/CD](https://img.shields.io/badge/CI%2FCD-6E40C9?style=for-the-badge)
+![DevOps](https://img.shields.io/badge/DevOps-007ACC?style=for-the-badge)
 
 ---
 
-## 📋 Prerequisites
+## 🛠 Core Skills
 
-- AWS Account with GuardDuty permissions  
-- Terraform installed locally  
-- Git CLI for cloning the repository  
-- AWS CLI configured with credentials (optional, for manual deployment)  
+- **Cloud & Infrastructure:** EC2 | S3 | Lambda | CloudWatch | RDS | GuardDuty | CloudTrail | IAM | VPC  
+- **Automation & Scripting:** Python | Bash | Terraform | Docker | CI/CD | GitHub Actions | IaC  
+- **Monitoring & Observability:** CloudWatch dashboards | Metrics | Alerts | Logging | Incident response | NOC ops  
+- **Security & Compliance:** GuardDuty | Threat detection | Automated remediation | Compliance workflows  
+- **DevOps & CloudOps:** Infrastructure automation | CI/CD deployment | Operational troubleshooting  
 
 ---
 
-## 🚀 Quick Start
+## 📂 Featured Projects
 
-```bash
-# Clone repository
-git clone https://github.com/charles-bucher/cloudOps-guardDuty-automation.git
-cd cloudOps-guardDuty-automation
+### 1. Multi-Tier App Troubleshooting Playground  
+[Repo Link](#)  
 
-# Initialize Terraform
-terraform init
+Deploy a multi-tier AWS web application intentionally built to be debugged and broken. Demonstrates cloud support, incident response, troubleshooting, and operational monitoring.  
 
-# Preview infrastructure
-terraform plan
+**Tech:** EC2, RDS, VPC, Lambda, Terraform, Python, Bash, CI/CD  
 
-# Deploy GuardDuty
-terraform apply
-Type yes when prompted to confirm deployment.
+**Screenshots:**  
+![Multi-Tier App Screenshot 1](screenshots/multi-tier-1.png)  
+![Multi-Tier App Screenshot 2](screenshots/multi-tier-2.png)  
 
-⚠️ Always review the Terraform plan before applying in production accounts.
+---
 
-🎬 Visual Walkthrough
-Step	Screenshot / GIF
-1️⃣ GitHub Push	
-2️⃣ Terraform Plan	
-3️⃣ Terraform Plan Confirmation	
-4️⃣ Terraform Apply	GIF showing Terraform apply in progress
-5️⃣ GuardDuty Dashboard	GIF showing GuardDuty enabling in AWS Console
+### 2. AWS Troubleshooting Lab  
+[Repo Link](#)  
 
-🗂 Repository Structure
-bash
-Copy code
-cloudOps-guardDuty-automation/
-├── .github/
-│   └── workflows/
-│       └── terraform-apply.yml   # GitHub Actions workflow
-├── main.tf                      # Terraform main configuration
-├── variables.tf                 # Terraform input variables
-├── outputs.tf                   # Terraform outputs
-├── README.md                    # This file
-└── screenshots/
-    └── GuardDuty/               # Screenshots & GIFs
-🛠 What I Built (Technical Details)
-Terraform Configuration
+Hands-on collection of AWS failure scenarios with guided troubleshooting and automated remediation. Shows deep AWS support, NOC operations, and monitoring/observability.  
 
-main.tf - AWS provider, GuardDuty detector, optional SNS/CloudWatch setup
+**Tech:** EC2 failure simulation, CloudWatch alerts, Lambda, GuardDuty, Terraform automation  
 
-variables.tf - Input variables for AWS region, GuardDuty config, notifications
+**Screenshots:**  
+![Troubleshooting Lab Screenshot 1](screenshots/troubleshooting-lab-1.png)  
+![Troubleshooting Lab Screenshot 2](screenshots/troubleshooting-lab-2.png)  
 
-outputs.tf - Outputs GuardDuty detector ID, findings URL, SNS topic ARN
+---
 
-CI/CD Pipeline
+### 3. AWS Monitoring & Observability  
+[Repo Link](#)  
 
-.github/workflows/terraform-apply.yml
+CloudWatch dashboards, metric tracking, anomaly detection, and automated alerts. Demonstrates proactive support and operational excellence in AWS.  
 
-Trigger: push to main branch
+**Screenshots:**  
+![Monitoring Screenshot 1](screenshots/monitoring-1.png)  
+![Monitoring Screenshot 2](screenshots/monitoring-2.png)  
 
-Steps: terraform fmt, terraform validate, terraform plan, optionally terraform apply
+---
 
-📊 What I Learned
-Terraform state locking & remote state for team environments
+### 4. GuardDuty & CloudOps Automation  
+[Repo Link](#)  
 
-IAM permissions troubleshooting
+Terraform-based automated workflows to remediate security alerts from GuardDuty. Includes CI/CD pipelines, security automation, and CloudOps best practices.  
 
-GitHub Actions secrets management for CI/CD
+**Screenshots:**  
+![GuardDuty Automation Screenshot 1](screenshots/guardduty-1.png)  
+![GuardDuty Automation Screenshot 2](screenshots/guardduty-2.png)  
 
-Version consistency across environments
+---
 
-🎯 Skills Demonstrated
-Infrastructure-as-Code with Terraform
+## 🌐 Links & Portfolio
 
-Security Automation & GuardDuty deployment
+- GitHub: [charles-bucher](https://github.com/charles-bucher)  
+- Portfolio: [charles-bucher.github.io](https://charles-bucher.github.io)  
+- LinkedIn: [Charles Bucher](https://www.linkedin.com/in/charles-bucher-cloud)  
+- Indeed: [Charles Bucher](https://profile.indeed.com/p/charlesb-x0xr5fx)  
 
-CI/CD Pipelines with GitHub Actions
+---
 
-AWS Security services (GuardDuty, CloudWatch Events, SNS)
+## 📌 Keywords & Summary
 
-Documentation with screenshots and GIFs
+AWS Cloud Support | CloudOps Automation | NOC Operations | Incident Response | Monitoring & Observability | EC2 | Lambda | RDS | CloudWatch | GuardDuty | Python | Bash | Terraform | CI/CD | DevOps | Security Automation | Operational Troubleshooting  
 
-Error debugging: IAM, Terraform state, version conflicts
+Self-taught, hands-on, and results-oriented cloud engineer driving practical AWS support, automation, and observability through real-world projects and labs.  
 
-⚠️ Notes
-Cost Awareness: GuardDuty analyzes CloudTrail events & VPC Flow Logs (~$5–10/month small accounts)
+---
 
-Security Best Practices: Never commit AWS credentials. Review Terraform plans. Use least-privilege IAM policies.
+## 📈 Contributions
 
-🤝 Contributing
-Open issues or submit pull requests for:
+375+ contributions in the past year across cloud support, monitoring, automation, and NOC-focused projects.  
+Actively maintaining Terraform pipelines, alerting workflows, and operational labs.  
 
-Automation improvements
-
-Additional monitoring integrations
-
-Enhanced visual documentation
-
-Bug fixes or optimizations
-
-📄 License
-MIT License – See LICENSE for details
-
-📞 Contact
-Email: charles.bucher.cloud@gmail.com
-
-LinkedIn: Charles Bucher
-
-GitHub: charles-bucher
-
-🔍 Keywords for ATS / Recruiters
-AWS, GuardDuty, Terraform, Infrastructure-as-Code, Security Automation, Threat Detection, CI/CD, GitHub Actions, CloudOps, Security Monitoring, Automated Deployment, DevSecOps
-
-yaml
-
-
-
+💡 Note: All repositories showcase hands-on cloud support, monitoring, troubleshooting, automation, and CloudOps excellence.
