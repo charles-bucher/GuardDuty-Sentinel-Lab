@@ -1,50 +1,53 @@
 # AWS GuardDuty Automation with Terraform
 
-[![Terraform](https://img.shields.io/badge/Terraform-623CE4?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
-[![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)](https://aws.amazon.com/)
-[![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=for-the-badge&logo=github&logoColor=white)](https://github.com/features/actions)
-[![CloudOps](https://img.shields.io/badge/CloudOps-00ff94?style=for-the-badge)](https://github.com/charles-bucher)
+![Portfolio Badge](https://img.shields.io/badge/Portfolio-Ready-brightgreen)
 
-Automated AWS GuardDuty deployment using **Terraform** for security threat detection and CloudOps automation. Fully CI/CD-enabled with GitHub Actions and portfolio-ready visual documentation.
+Automated Security Threat Detection | Infrastructure-as-Code | CI/CD Pipeline
+
+This project demonstrates CloudOps security automation skills by deploying AWS GuardDuty using Terraform. It includes a complete CI/CD pipeline and visual documentation for portfolio purposes.
 
 ---
 
 ## 🎯 What This Project Does
-- Automates GuardDuty deployment across AWS accounts.
-- Provides real-time security findings notifications.
-- Implements repeatable, auditable Infrastructure-as-Code.
-- Includes GitHub Actions CI/CD pipeline for automation.
-- Portfolio-ready visual walkthroughs with screenshots and GIFs.
+
+- Automates AWS GuardDuty deployment across AWS accounts using Terraform  
+- Enables real-time security findings notifications  
+- Provides repeatable, auditable Infrastructure-as-Code deployment  
+- Uses GitHub Actions for CI/CD automation  
+- Includes step-by-step visual walkthroughs with screenshots and GIFs  
 
 ---
 
 ## 🔑 Key Features
 
-**Infrastructure as Code**
-- Terraform automates entire GuardDuty setup.
-- Version-controlled config files: `main.tf`, `variables.tf`, `outputs.tf`.
-- Repeatable, auditable deployments across multiple AWS accounts.
+### Infrastructure as Code
+- Terraform automates the entire GuardDuty setup  
+- Version-controlled configuration files (`main.tf`, `variables.tf`, `outputs.tf`)  
+- Repeatable deployments across multiple AWS accounts  
+- Auditable infrastructure changes  
 
-**Security Monitoring**
-- Detects compromised credentials, crypto-mining, unauthorized access.
-- Real-time alerts via CloudWatch/SNS.
-- Extensible for Lambda or custom monitoring rules.
+### Security Monitoring
+- GuardDuty enabled for threat detection (compromised credentials, crypto mining, unauthorized access)  
+- Real-time detection of security threats  
+- Extensible for SNS notifications, Lambda integrations, or custom monitoring rules  
 
-**CI/CD Pipeline**
-- GitHub Actions workflow automates Terraform deployment.
-- Runs `terraform plan` and `terraform apply` on code changes.
-- Safe deployment with plan review.
+### CI/CD Pipeline
+- GitHub Actions workflow for automated Terraform deployment  
+- Runs `terraform plan` and `terraform apply` on code changes  
+- Safe deployment practices with plan review  
 
-**Visual Documentation**
-- Screenshots and GIFs of deployment workflow for portfolio impact.
+### Visual Documentation
+- Screenshots showing each step of the workflow  
+- GIFs demonstrate real-time progress for recruiters and hiring managers  
 
 ---
 
 ## 📋 Prerequisites
-- AWS Account with GuardDuty permissions
-- Terraform installed locally
-- Git CLI for cloning
-- AWS CLI configured (optional, for manual deployment)
+
+- AWS Account with GuardDuty permissions  
+- Terraform installed locally  
+- Git CLI for cloning the repository  
+- AWS CLI configured with credentials (optional, for manual deployment)  
 
 ---
 
@@ -63,68 +66,77 @@ terraform plan
 
 # Deploy GuardDuty
 terraform apply
-# Type "yes" to confirm
-⚠️ Always review the Terraform plan before deploying in production accounts.
+Type yes when prompted to confirm deployment.
+
+⚠️ Always review the Terraform plan before applying in production accounts.
 
 🎬 Visual Walkthrough
 Step	Screenshot / GIF
 1️⃣ GitHub Push	
 2️⃣ Terraform Plan	
-3️⃣ Terraform Apply	
-4️⃣ GuardDuty Dashboard	GIF showing GuardDuty enabling in AWS Console
-
-GIFs demonstrate real-time progress for recruiters.
+3️⃣ Terraform Plan Confirmation	
+4️⃣ Terraform Apply	GIF showing Terraform apply in progress
+5️⃣ GuardDuty Dashboard	GIF showing GuardDuty enabling in AWS Console
 
 🗂 Repository Structure
 bash
 Copy code
 cloudOps-guardDuty-automation/
 ├── .github/
-│   └── workflows/terraform-apply.yml
-├── main.tf
-├── variables.tf
-├── outputs.tf
-├── README.md
+│   └── workflows/
+│       └── terraform-apply.yml   # GitHub Actions workflow
+├── main.tf                      # Terraform main configuration
+├── variables.tf                 # Terraform input variables
+├── outputs.tf                   # Terraform outputs
+├── README.md                    # This file
 └── screenshots/
-    └── GuardDuty/  # Screenshots & GIFs
-🛠 Technical Details
-main.tf: AWS provider, GuardDuty detector, optional SNS/CloudWatch.
+    └── GuardDuty/               # Screenshots & GIFs
+🛠 What I Built (Technical Details)
+Terraform Configuration
 
-variables.tf: AWS region, GuardDuty config, notifications.
+main.tf - AWS provider, GuardDuty detector, optional SNS/CloudWatch setup
 
-outputs.tf: Detector ID, findings URL, SNS ARN.
+variables.tf - Input variables for AWS region, GuardDuty config, notifications
 
-CI/CD: .github/workflows/terraform-apply.yml triggers on push, runs format, validate, plan, and apply.
+outputs.tf - Outputs GuardDuty detector ID, findings URL, SNS topic ARN
 
-📊 Lessons Learned
-Terraform state management and remote state configuration.
+CI/CD Pipeline
 
-IAM permission troubleshooting.
+.github/workflows/terraform-apply.yml
 
-GitHub Actions secrets for CI/CD.
+Trigger: push to main branch
 
-Version consistency across environments.
+Steps: terraform fmt, terraform validate, terraform plan, optionally terraform apply
+
+📊 What I Learned
+Terraform state locking & remote state for team environments
+
+IAM permissions troubleshooting
+
+GitHub Actions secrets management for CI/CD
+
+Version consistency across environments
 
 🎯 Skills Demonstrated
-Infrastructure-as-Code (Terraform)
+Infrastructure-as-Code with Terraform
 
 Security Automation & GuardDuty deployment
 
-CI/CD Pipelines (GitHub Actions)
+CI/CD Pipelines with GitHub Actions
 
-AWS Security Services (GuardDuty, CloudWatch, SNS)
+AWS Security services (GuardDuty, CloudWatch Events, SNS)
 
-Documentation with screenshots/GIFs
+Documentation with screenshots and GIFs
 
-Debugging IAM, Terraform state, and version conflicts
+Error debugging: IAM, Terraform state, version conflicts
 
 ⚠️ Notes
-Cost Awareness: GuardDuty analyzes CloudTrail & VPC Flow Logs (~$5–10/month for small accounts)
+Cost Awareness: GuardDuty analyzes CloudTrail events & VPC Flow Logs (~$5–10/month small accounts)
 
-Security Best Practices: Do not commit AWS credentials, review Terraform plans, least-privilege IAM policies
+Security Best Practices: Never commit AWS credentials. Review Terraform plans. Use least-privilege IAM policies.
 
 🤝 Contributing
-Open issues or submit PRs for:
+Open issues or submit pull requests for:
 
 Automation improvements
 
@@ -144,8 +156,10 @@ LinkedIn: Charles Bucher
 
 GitHub: charles-bucher
 
-🔍 Keywords
-AWS, GuardDuty, Terraform, Infrastructure-as-Code, Security Automation, CI/CD, GitHub Actions, CloudOps, Security Monitoring, DevSecOps, Cloud Security, Automated Deployment
+🔍 Keywords for ATS / Recruiters
+AWS, GuardDuty, Terraform, Infrastructure-as-Code, Security Automation, Threat Detection, CI/CD, GitHub Actions, CloudOps, Security Monitoring, Automated Deployment, DevSecOps
 
 yaml
-Copy code
+
+
+
